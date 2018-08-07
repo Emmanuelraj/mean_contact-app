@@ -1,0 +1,21 @@
+<p>
+  contact-list works!
+</p>
+
+
+
+<h1>We simplify
+<a href="" class="typewrite" style="color: #3a3b64;" data-period="2000" data-type="[ &quot;IT&quot;, &quot;SCHOOL MANAGEMENT&quot;, &quot;HOSPITAL MANAGEMENT&quot;, &quot;RESTAURANT MANAGEMENT&quot;, &quot;EVENT TICKETING&quot;, &quot;BUSINESS&quot; ]">
+  <span class="wrap"></span></a>
+</h1>
+<ul class="nav nav-pills nav-stacked">
+   <li *ngFor="let contact of contacts" (click) ="onSelectContact(contact)">
+
+    {{contact.firstname}}
+
+      {{contact.lastname}}
+
+      {{contact.phoneno}}
+   </li>
+
+</ul>
